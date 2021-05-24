@@ -1,0 +1,29 @@
+11/05:
+Il faut discuter de la pertinence de garder les points dans les mots pour le
+dictionnaire.
+
+Penser à bien utiliser le temps comme critère de performance aussi
+
+Pour les majuscules, problème avec les noms propres (c'est du détail, on pourrait 
+vérifier qu'il ya un point avant pour éviter une partie des erreurs)
+
+12/05: RESULTAT !
+Un premier test avec des phrases utilisables.
+On pourra corriger certaines phrases pour pouvoir les présenter.
+Il manque juste une petite mesure pour savoir si la phrase n'a pas été recopié tel quel.
+
+2e: il faut affiner la mesure.
+Notamment, le nombre moyen tel que (parmi tous les mots de la phrase) n'a pas d'intérêt.
+Il vaut peut être mieux compter le nombre de mots rares (genre < 5 ou 10 apparitions dans le texte)
+
+22/05 : Alors pour les complexités c'est difficile ...
+https://blog.bruce-hill.com/a-faster-weighted-random-choice
+Sur le prochain, ils ne font que donner des réponses différentes
+https://stackoverflow.com/questions/40143157/big-o-complexity-of-random-choicelist-in-python3
+
+Pour le poids (en octets):
+https://stackoverflow.com/questions/13530762/how-to-know-bytes-size-of-python-object-like-arrays-and-dictionaries-the-simp
+
+Poids des int python
+https://stackoverflow.com/questions/10365624/sys-getsizeofint-returns-an-unreasonably-large-value
+

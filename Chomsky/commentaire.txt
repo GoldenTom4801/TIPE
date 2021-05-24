@@ -1,0 +1,26 @@
+10/05/21 : L'algo de base est fini. On pourrait complexifier encore
+la structure mais ça ne parrait pas très utile.
+En fait, la grammaire du français rend bien moins efficace cette méthode.
+
+Difficulté :
+- Conjugaison
+- Accord selon le genre
+- les articles lorsque le premier mot est une voyelle
+- Les listes actuels contiennent des mots trop peu utilisés,
+alors que les phrases pourraient avoir du sens avec des mots simples
+ici elles deviennent vraiment trop bancale avec les autres problèmes 
+précédents
+
+En réalité, on peut régler tous ces problèmes. Pour la rareté des mots,
+en fait il faudrait vraiment commencer avec des listes de mots simples.
+La conjugaison est en partie régler (Note : il y a une grosse liste 
+de verbes conjugués par le même auteur).
+Accord selon le genre : difficile, il faudrait des données prétraitées.
+Du genre trouver un dictionnaire pour me renvoyer le genre 
+Les articles : faciles. Il suffit de réduire la liste et rajouter des 
+règles selon la première lettre du nom.
+
+Pour la suite :
+Je pense qu'il faut simplifier les listes pour atteindre un modèle 
+satisfaisant avant de rajouter des mots.
+Dans tous les cas, je pense qu'il ne faudra pas passer trop de temps dessus

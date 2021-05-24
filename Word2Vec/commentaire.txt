@@ -1,0 +1,9 @@
+10/05 : 
+Il faudrait mieux créer une classe pour skipgram 
+
+14/05:
+Ok super. En fait, je viens de me rendre compte que W2V n'est pas du tout le bon algorithme dont j'ai besoin pour construire mes textes... Il me faut absolument un RNN, sinon l'algorithme "oublie" (ne connait pas) ce qu'il y a avant.
+
+Pour tester des choses plus tard, voici quand même un algo préentrainé de Google.
+https://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/
+A utiliser avec gensim

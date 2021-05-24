@@ -1,0 +1,15 @@
+12/05:
+Je viens d'avoir la KEY pour l'API.
+J'ai envie de mélanger Markov et Chomsky.
+
+L'idée :
+- Palier l'impertinence de la probabilité uniforme dans Chomsky
+- Régler les problèmes d'incohérence dans la syntaxe avec Markov
+
+En fait le problème, c'est que je ne connaissais pas la classe grammaticale. Le problème est 
+pratiquement régler grâce à l'API. (même s'il pourrait y avoir plusieurs réponses possibles)
+
+2e: Récupérer le json:
+https://docs.python.org/3/library/urllib.request.html
+
+Image : https://fr.m.wikipedia.org/wiki/Fichier:Neural_network.svg

@@ -1,0 +1,27 @@
+16/05:
+Il y a beaucoup de tests à faire:
+- One hot encoded / embedding : avec les caractères (d'ailleurs pourquoi laisser autant de dimensions dans le tuto ?)
+- On pourra immédiatement travailler avec des mots en embedding (peu de changements à faire). La première couche
+s'occupe de faire les associations et de créer les embedding (je crois).
+
+On pourra ajouter des Dropout, une deuxième couche. LTSM semble mieux comme couche RNN (on pourra essayer de comparer).
+Il faut que je rajoute dès maintenant des fonctions pour calculer les temps d'entrainement (et les enregistrer).
+C'est important pour la comparaison.
+
+Une fois le code propre, essayer avec d'autres formes de texte : roman, code, peut être des poèmes avec 
+plus de forme (plus de structure).
+
+J'ai pour l'instant téléchargé et mis une partie du code de ce projet dans code_diablo.txt:
+https://github.com/OpenDiablo2/OpenDiablo2
+
+Voici un autre receuil de poème qui possède en plus des calligrammes : poèmes avec une forme calligraphique 
+https://www.gutenberg.org/files/55569/55569-0.txt
+
+
+BON : Je ne comprends pas pourquoi la sauvegarde via model.save ne sauvegarde pas correctement 
+la fonction call. C'est pourtant une fonction de base et elle est censée être conservée.
+Bon, en ne sauvegardant que les poids, cela semble marcher !.
+
+Ça semble marcher en passant directement par les poids (en les sauvegardant eux seuls).
+
+Q? Où mettre le dropout ? entre l'entrée et la couche récurrente ou récurrente et fin ?.

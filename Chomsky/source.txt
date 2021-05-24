@@ -1,0 +1,12 @@
+Liste d'adjectif data/adjs.txt :
+http://www.nurykabe.com/dump/text/lists/
+Yann van der Cruyssen.
+
+Liste d'adverbe data/advs.txt :
+http://www.nurykabe.com/dump/text/lists/
+Yann van der Cruyssen.
+
+Pareils pour tous les autres fichiers de /data
+
+Pour l'image d'arbre (cf Powerpoint)
+https://www.nltk.org/book/ch08.html
