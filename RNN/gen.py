@@ -39,7 +39,7 @@ rnn_units =  1024
 
 model = RNNGenTexte(len(ids_from_chars.get_vocabulary()), dim_vect, rnn_units)
 model.build((1, 100))
-model.load_weights("RNN/model_trained/training/ckpt_100.ckpt")
+model.load_weights("RNN/model_trained/training/ckpt_61.ckpt")
 
 
 class OneStep(tf.keras.Model):
@@ -87,16 +87,19 @@ class OneStep(tf.keras.Model):
     return predicted_chars, states
 
 one_step_model = OneStep(model, chars_from_ids, ids_from_chars)
-start = time.time()
-states = None
-next_char = tf.constant(['FABLE:'])
-result = [next_char]
+f = open("RNN.24.05.ckpt61.txt", mode = 'w')
+for i in range(10):
+    start = time.time()
+    states = None
+    next_char = tf.constant(['FABLE:'])
+    result = [next_char]
 
-for n in range(1000):
-  next_char, states = one_step_model.generate_one_step(next_char, states=states)
-  result.append(next_char)
 
-result = tf.strings.join(result)
-end = time.time()
-print(result[0].numpy().decode('utf-8'), '\n\n' + '_'*80)
-print('\nRun time:', end - start)
+
+    for n in range(1000):
+        next_char, states = one_step_model.generate_one_step(next_char, states=states)
+        result.append(next_char)
+
+    result = tf.strings.join(result)
+    end = time.time()
+    f.write(result[0].numpy().decode('utf-8') + '\n\n' + '_'*80 + '\n\nRun time:' + str(end - start) + "\n\n")
