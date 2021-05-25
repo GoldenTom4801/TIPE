@@ -43,7 +43,7 @@ class RNNGenTexteDropout(tf.keras.Model): # Notre classe pour RNN
         if states is None:
             states = self.gru.get_initial_state(x)
         x, states = self.gru(x, initial_state = states, training = training)
-        x = self.dropout(x)
+        x = self.dropout(x, training = training)
         x = self.dense(x, training = training)
 
         if return_state:

@@ -39,7 +39,7 @@ rnn_units =  1024
 
 model = RNNGenTexte(len(ids_from_chars.get_vocabulary()), dim_vect, rnn_units)
 model.build((1, 100))
-model.load_weights("RNN/model_trained/training/ckpt_61.ckpt")
+model.load_weights("RNN/model_trained/training-ckptOpti/ckpt_40.ckpt")
 
 
 class OneStep(tf.keras.Model):
@@ -87,7 +87,7 @@ class OneStep(tf.keras.Model):
     return predicted_chars, states
 
 one_step_model = OneStep(model, chars_from_ids, ids_from_chars)
-f = open("RNN.24.05.ckpt61.txt", mode = 'w')
+f = open("RNN/texte_generé/RNN.24.05.ckpt40.txt", mode = 'w')
 for i in range(10):
     start = time.time()
     states = None
